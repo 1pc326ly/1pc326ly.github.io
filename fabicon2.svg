@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 50 300 300" width="100%" height="100%">
+  <!-- 배경: 딥 매트 차콜 -->
+  <rect width="400" height="400" fill="#121316"/>
+  
+  <defs>
+    <!-- 마스크: 중앙 지우기 -->
+    <mask id="중앙지우기">
+      <rect x="0" y="0" width="400" height="400" fill="white"/>
+      <rect x="185" y="0" width="30" height="400" fill="black"/>
+    </mask>
+  </defs>
+  
+  <!-- 1. 약등호 물결선 (완전 순백색) -->
+  <g mask="url(#중앙지우기)">
+    <path d="M 110 155 C 155 115, 245 195, 290 155" 
+          stroke="#FFFFFF" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <path d="M 110 245 C 155 205, 245 285, 290 245" 
+          stroke="#FFFFFF" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- 2. 중앙 십자 별 (단색 택티컬 카키) -->
+  <path d="M 200 85 
+           C 200 195, 195 200, 85 200 
+           C 195 200, 200 205, 200 315 
+           C 200 205, 205 200, 315 200 
+           C 205 200, 200 195, 200 85 Z" 
+        fill="#53683F"/>
+</svg>
